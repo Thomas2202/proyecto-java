@@ -1,16 +1,7 @@
-const listadoNotas = [9, 7, 6] 
+const numb = parseInt(prompt('Ingresar la cantidad de veces que quiera repetir la palabra'))
 
-let contadorDeNotas = 0;
+const txt = '¡Hola!'
 
-for (let i = 0; i < 3; i++){
-    contadorDeNotas += listadoNotas[i];
-}
-
-const promedio = contadorDeNotas/3;
-console.log(promedio);
-
-if(promedio >= 7){
-    console.log("Esta aprobado con un promedio de: " + promedio);
-}else{
-    console.log("Esta desaprobado con un promedio de: " + promedio);
+for(let i = 0; i < numb; i++) {
+    alert(txt);
 }
