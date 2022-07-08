@@ -1,4 +1,4 @@
-const listadoNotas = [parseInt(prompt('ingresar primera nota: ')), parseInt(prompt('Ingresar segunda nota: ')), parseInt(prompt('Ingresar tercera nota: '))] 
+const listadoNotas = [9, 7, 6] 
 
 let contadorDeNotas = 0;
 
