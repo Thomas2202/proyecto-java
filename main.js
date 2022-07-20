@@ -1,34 +1,18 @@
-let nombre = prompt("Ingresa tu nombre: ")
+let concesionaria = {
+    marca: 'Ford',
+    modelo: 'Focus',
+    año: '2012',
+    km: '12.000km'
+};
 
-let saludar = (nombre) => {alert("Bienvenido " + nombre + ", veremos si promocionas.")}
+let marca = concesionaria['marca'];
+let modelo = concesionaria['modelo'];
+let año = concesionaria['año'];
+let km = concesionaria['km'];
 
-saludar(nombre)
+frase = `Marca: ${marca}
+Modelo: ${modelo}
+Año de fabricacion: ${año}
+Cantidad KM recorridos: ${km}`;
 
-
-let nota1 = parseInt(prompt("Ingresa la nota del primer parcial"))
-
-while(nota1 > 11 || nota1 < 1){
-    alert("La nota debe ser mayor a 0 y menor o igual a 10")
-    nota1 = parseInt(prompt("Ingresa la nota del primer parcial"))
-} 
-
-
-
-let nota2 = parseInt(prompt("Ingresa la nota del segundo parcial"))
-
-while(nota2 > 11 || nota2 < 1){
-    alert("La nota debe ser mayor a 0 y menor o igual a 10")
-    nota2 = parseInt(prompt("Ingresa la nota del segundo parcial"))
-} 
-
-let promedio = (n1,n2) => {
-    let resultado = (n1+n2)/2
-    return  resultado
-}
-
-
-let promedioNotas = promedio(nota1, nota2)
-
-if(promedioNotas>=7){
-    alert("Felicidades " + nombre + "! Promocionaste con un promedio de: " + promedioNotas)
-}else{ alert("Lo siento " + nombre + ", tu promedio es de " + promedioNotas + " y no promocionaste.") }
+console.log(frase);
